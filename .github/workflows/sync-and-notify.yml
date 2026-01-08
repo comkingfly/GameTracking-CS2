@@ -1,0 +1,99 @@
+name: Sync and Notify CS2 Updates
+
+on:
+  schedule:
+    # 每 5 分钟检查一次（最快频率）
+    - cron: '*/5 * * * *'
+    # 或者每 10 分钟：'*/10 * * * *'
+    # 或者每小时：'0 * * * *'
+  workflow_dispatch:  # 允许手动触发测试
+
+jobs:
+  sync-and-notify:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 检出你的 fork
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整历史
+          
+      # 2. 添加上游仓库并获取最新内容
+      - name: Sync with upstream
+        id: sync
+        run: |
+          # 添加上游仓库
+          git remote add upstream https://github.com/SteamDatabase/GameTracking-CS2.git || true
+          
+          # 获取上游最新内容
+          git fetch upstream master
+          
+          # 获取当前本地最新 commit SHA
+          CURRENT_SHA=$(git rev-parse HEAD)
+          echo "current_sha=$CURRENT_SHA"
+          
+          # 获取上游最新 commit SHA
+          UPSTREAM_SHA=$(git rev-parse upstream/master)
+          echo "upstream_sha=$UPSTREAM_SHA"
+          
+          # 检查是否有新更新
+          if [ "$CURRENT_SHA" != "$UPSTREAM_SHA" ]; then
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+            
+            # 获取新 commit 的详细信息
+            COMMIT_MESSAGE=$(git log upstream/master -1 --pretty=format:"%s")
+            COMMIT_AUTHOR=$(git log upstream/master -1 --pretty=format:"%an")
+            COMMIT_DATE=$(git log upstream/master -1 --pretty=format:"%ci")
+            COMMIT_URL="https://github.com/SteamDatabase/GameTracking-CS2/commit/$UPSTREAM_SHA"
+            
+            echo "commit_message=$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
+            echo "commit_author=$COMMIT_AUTHOR" >> $GITHUB_OUTPUT
+            echo "commit_date=$COMMIT_DATE" >> $GITHUB_OUTPUT
+            echo "commit_url=$COMMIT_URL" >> $GITHUB_OUTPUT
+            echo "commit_sha=$UPSTREAM_SHA" >> $GITHUB_OUTPUT
+            
+            # 合并上游更新
+            git merge upstream/master --ff-only
+            
+            # 推送到你的 fork
+            git push origin master
+          else
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+          fi
+          
+      # 3. 发送 Discord 通知（仅当有更新时）
+      - name: Send Discord notification
+        if: steps.sync.outputs.has_updates == 'true'
+        run: |
+          curl -H "Content-Type: application/json" \
+               -d "{
+                 \"content\": \"@everyone\",
+                 \"embeds\": [{
+                   \"title\": \"🎮 CS2 仓库有新更新！\",
+                   \"description\": \"${{ steps.sync.outputs.commit_message }}\",
+                   \"url\": \"${{ steps.sync.outputs.commit_url }}\",
+                   \"color\": 3447003,
+                   \"fields\": [
+                     {
+                       \"name\": \"📝 提交者\",
+                       \"value\": \"${{ steps.sync.outputs.commit_author }}\",
+                       \"inline\": true
+                     },
+                     {
+                       \"name\": \"🕒 提交时间\",
+                       \"value\": \"${{ steps.sync.outputs.commit_date }}\",
+                       \"inline\": true
+                     },
+                     {
+                       \"name\": \"🔗 Commit SHA\",
+                       \"value\": \"\`${{ steps.sync.outputs.commit_sha }}\`\"
+                     }
+                   ],
+                   \"footer\": {
+                     \"text\": \"SteamDatabase/GameTracking-CS2\"
+                   },
+                   \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"
+                 }]
+               }" \
+               ${{ secrets.DISCORD_WEBHOOK }}
