@@ -33601,6 +33601,9 @@ models/generic/pipe01/pipe_metal01a_paint_rust.vmat_c CRC:002490414d size:4341
 models/generic/pipe01/pipe_metal01a_paint_white.vmat_c CRC:00adfc3d04 size:4261
 models/generic/pipe01/pipe_metal01a_paint_yellow.vmat_c CRC:00585c02b8 size:4469
 models/generic/pipe01/pipe_metal01a_rust_color_tga_cb6c7060.vtex_c CRC:00f8452d51 size:2478139
+models/generic/pipe01/pipe_metal_01_height_tga_7c5ea927.vtex_c CRC:002f13da7d size:1112520
+models/generic/pipe01/pipe_metal_01_height_tga_bfc95c39.vtex_c CRC:00e5e336f8 size:1112472
+models/generic/pipe01/pipe_metal_01_height_tga_d96b13c8.vtex_c CRC:00d66e72a8 size:1112536
 models/generic/planter_kit_01/pk01_planter_01.vmat_c CRC:00c6538640 size:4138
 models/generic/planter_kit_01/pk01_planter_01.vmdl_c CRC:00e0692ef0 size:7414
 models/generic/planter_kit_01/pk01_planter_01_broken.vmdl_c CRC:00145987af size:16435

@@ -72010,6 +72010,7 @@ materials/skybox/sky_hr_aztec_02_lighting_exr_a1249a96.vtex
 materials/skybox/sky_de_train03_exr_4fdb8a38.vtex
 models/generic/pipe01/pipe_metal01a_color_tga_87202c30.vtex
 models/generic/pipe01/pipe_metal01a_normal_tga_e73e0733.vtex
+models/generic/pipe01/pipe_metal_01_height_tga_bfc95c39.vtex
 materials/skybox/skymodel_hosekwilkie_ref/skymodel_hosekwilkie_albedo_0_30_turbidity_02_0_elevation_55_0_exr_69ea08cd.vtex
 materials/sprites/640_pain_down_color_tga_28e3ab1d.vtex
 materials/sprites/640_pain_right_color_tga_d1001117.vtex
@@ -94297,6 +94298,7 @@ materials/models/weapons/customization/paints/anodized_multi/m4a1s_hotrod_psd_ef
 materials/models/weapons/customization/paints/anodized_multi/tiger_psd_7dbb6a26.vtex
 materials/models/weapons/customization/paints/anodized_multi/workshop/skull_tga_c17d160d.vtex
 materials/de_overpass/construction/gravel_1_height_psd_ca609122.vtex
+models/generic/pipe01/pipe_metal_01_height_tga_7c5ea927.vtex
 materials/stone/ground/stone_ground_skewed_wet_01_vmat_g_theight1_810ae8c0.vtex
 materials/cs_italy/ground/ground_soil_1_height_tga_f12809a3.vtex
 materials/de_dust/hr_dust/hr_dust_plaster_20_blendmod_blend_psd_d4d15265.vtex
@@ -94997,6 +94999,7 @@ models/generic/pictures_01/pictures_10_vmat_g_theight1_810ae8c0.vtex
 models/generic/pictures_01/pictures_09_vmat_g_theight1_810ae8c0.vtex
 models/generic/pictures_01/pictures_11_vmat_g_theight1_810ae8c0.vtex
 models/generic/planter_kit_01/planter_kit_01_tintmask_tga_4791516b.vtex
+models/generic/pipe01/pipe_metal_01_height_tga_d96b13c8.vtex
 models/generic/planter_kit_01/planter_kit_02_tintmask_tga_234acb31.vtex
 models/generic/planter_kit_01/planter_kit_03_tintmask_tga_17335b4d.vtex
 models/generic/planter_kit_01/planter_kit_04_tintmask_tga_a0b2b8d5.vtex
