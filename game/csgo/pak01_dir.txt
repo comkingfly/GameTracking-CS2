@@ -706,7 +706,7 @@ animation/graphs/viewmodel/viewmodel_gun.vnmgraph+xm1014.vnmgraph_c CRC:00072b86
 animation/graphs/viewmodel/viewmodel_gun.vnmgraph_c CRC:003d4f09d7 size:13508
 animation/graphs/viewmodel/viewmodel_gun_cz75.vnmgraph_c CRC:0097307e28 size:7495
 animation/graphs/viewmodel/viewmodel_gun_elites.vnmgraph_c CRC:00e8a1d47b size:8439
-animation/graphs/viewmodel/viewmodel_gun_revolver.vnmgraph_c CRC:0050f8bda6 size:9822
+animation/graphs/viewmodel/viewmodel_gun_revolver.vnmgraph_c CRC:0045851b09 size:9864
 animation/graphs/viewmodel/viewmodel_inspects.vnmgraph+ak47.vnmgraph_c CRC:001b45e0b3 size:5197
 animation/graphs/viewmodel/viewmodel_inspects.vnmgraph+aug.vnmgraph_c CRC:0076811a12 size:4811
 animation/graphs/viewmodel/viewmodel_inspects.vnmgraph+awp.vnmgraph_c CRC:0074979bdc size:4688
@@ -74935,7 +74935,7 @@ panorama/layout/popups/popup_capability_can_keychain.vxml_c CRC:009eae7329 size:
 panorama/layout/popups/popup_capability_can_patch.vxml_c CRC:0034011737 size:2469
 panorama/layout/popups/popup_capability_can_stattrack_swap.vxml_c CRC:00fcb2757e size:2992
 panorama/layout/popups/popup_capability_can_sticker.vxml_c CRC:003670d051 size:2666
-panorama/layout/popups/popup_capability_decodable.vxml_c CRC:00b6448bdc size:5364
+panorama/layout/popups/popup_capability_decodable.vxml_c CRC:00b70be9a5 size:5382
 panorama/layout/popups/popup_capability_header.vxml_c CRC:00340b7cb7 size:2076
 panorama/layout/popups/popup_capability_nameable.vxml_c CRC:00f219dcac size:3261
 panorama/layout/popups/popup_casket_operation.vxml_c CRC:002f32bc99 size:2472
@@ -75123,11 +75123,11 @@ panorama/scripts/inspect.vts_c CRC:00077ac9c3 size:70174
 panorama/scripts/intromovie.vts_c CRC:003458d5af size:4894
 panorama/scripts/itempreviewdebug.vjs_c CRC:00cf9bd3ad size:7742
 panorama/scripts/itemtile.vts_c CRC:00224134aa size:35374
-panorama/scripts/itemtile_store.vts_c CRC:00fca465f9 size:29918
+panorama/scripts/itemtile_store.vts_c CRC:007ec91d18 size:29918
 panorama/scripts/leaderboard.vts_c CRC:0065935c54 size:55150
 panorama/scripts/loadingscreen.vts_c CRC:00c6bed21c size:17054
 panorama/scripts/loadout_grid.vts_c CRC:0045f47a20 size:91982
-panorama/scripts/mainmenu.vts_c CRC:00727b28fa size:162270
+panorama/scripts/mainmenu.vts_c CRC:00edd71d3f size:162270
 panorama/scripts/mainmenu_inventory.vts_c CRC:00952efef2 size:56446
 panorama/scripts/mainmenu_inventory_search.vts_c CRC:00f61c642c size:14302
 panorama/scripts/mainmenu_license.vts_c CRC:005ba667ae size:4414
@@ -75138,7 +75138,7 @@ panorama/scripts/mainmenu_news.vts_c CRC:00ce6139ec size:7550
 panorama/scripts/mainmenu_overwatch.vjs_c CRC:001e516d7d size:4099
 panorama/scripts/mainmenu_play.vts_c CRC:00fa8c6510 size:215566
 panorama/scripts/mainmenu_select_item_for_capability.vts_c CRC:00c67dfc82 size:5518
-panorama/scripts/mainmenu_store_fullscreen.vts_c CRC:004b27fa1a size:25982
+panorama/scripts/mainmenu_store_fullscreen.vts_c CRC:001dfac269 size:26126
 panorama/scripts/mainmenu_store_tile_linked.vjs_c CRC:00d80fa760 size:5014
 panorama/scripts/mainmenu_stream.vts_c CRC:00d9d250b2 size:21870
 panorama/scripts/mainmenu_watch.vts_c CRC:00fc3b6134 size:44702
@@ -75172,7 +75172,7 @@ panorama/scripts/popups/popup_capability_can_keychain.vts_c CRC:004e667fa9 size:
 panorama/scripts/popups/popup_capability_can_patch.vts_c CRC:0002f0b0a1 size:13150
 panorama/scripts/popups/popup_capability_can_stattrack_swap.vts_c CRC:00ede73b88 size:12366
 panorama/scripts/popups/popup_capability_can_sticker.vts_c CRC:0085875179 size:41582
-panorama/scripts/popups/popup_capability_decodable.vts_c CRC:00c7cf34f1 size:74638
+panorama/scripts/popups/popup_capability_decodable.vts_c CRC:00ba9e56ef size:74574
 panorama/scripts/popups/popup_capability_header.vts_c CRC:007c9d5a62 size:14606
 panorama/scripts/popups/popup_capability_nameable.vts_c CRC:00869c9a56 size:24542
 panorama/scripts/popups/popup_casket_operation.vts_c CRC:008d73e11b size:14654
@@ -75188,7 +75188,7 @@ panorama/scripts/popups/popup_hud_edge_positions.vts_c CRC:00d58daa7d size:3998
 panorama/scripts/popups/popup_inspect_action-bar.vts_c CRC:0085056d82 size:42334
 panorama/scripts/popups/popup_inspect_async-bar.vts_c CRC:002c5245bd size:60574
 panorama/scripts/popups/popup_inspect_header.vts_c CRC:00b455eb14 size:9822
-panorama/scripts/popups/popup_inspect_purchase-bar.vts_c CRC:00b11ff5db size:19214
+panorama/scripts/popups/popup_inspect_purchase-bar.vts_c CRC:00367b936c size:18990
 panorama/scripts/popups/popup_inspect_rental-bar.vts_c CRC:00ba1b4ce0 size:29486
 panorama/scripts/popups/popup_inspect_shared.vts_c CRC:00a565a1a1 size:3214
 panorama/scripts/popups/popup_inventory_inspect.vts_c CRC:007f580e32 size:30830
@@ -78632,7 +78632,7 @@ resource/csgo_bulgarian.txt CRC:00782653c5 size:7123772
 resource/csgo_czech.txt CRC:005b151ecc size:4807847
 resource/csgo_danish.txt CRC:00459ad0eb size:4708993
 resource/csgo_dutch.txt CRC:00c411c969 size:4755625
-resource/csgo_english.txt CRC:00a396d8f1 size:4598340
+resource/csgo_english.txt CRC:00d4ecc5ea size:4598361
 resource/csgo_finnish.txt CRC:009739a582 size:4677910
 resource/csgo_french.txt CRC:00140bb306 size:4942727
 resource/csgo_german.txt CRC:00f5abf881 size:4878237
