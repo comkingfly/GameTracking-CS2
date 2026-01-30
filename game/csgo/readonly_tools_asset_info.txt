@@ -123032,3 +123032,4 @@ panorama/images/map_icons/map_icon_de_sanctum.vsvg
 panorama/images/map_icons/map_icon_de_stronghold.vsvg
 panorama/images/map_icons/map_icon_de_warden.vsvg
 panorama/videos/limited_edition_variations.webm
+scripts/workshop_cvar_whitelist.txt
