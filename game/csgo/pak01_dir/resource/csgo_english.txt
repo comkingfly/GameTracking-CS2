@@ -51518,9 +51518,6 @@
 		"quest_11015_var_partial:f" 					""
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
 
-		// Keeping old mission tokens until we can do the full dance of getting a new client
-		// and new GC out. Until that time we need to handle the case of an old GC, which
-		// will send the old tokens for mission descriptions, so we need the old tokens.
 		"mission_directive:p{mission-points}"			"<b>{d:mission-points}</b> {s:action}#|#<b>{d:mission-points}</b> {s:actions}"
  		"mission_directive_progress:p{mission-points}"	"{d:mission-progress}/<b>{d:mission-points}</b> {s:action}#|#{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}"
 
