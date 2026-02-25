@@ -4437,11 +4437,12 @@ maps/de_train_camera_nodes.kv3 CRC:00c2db3b8b size:26613
 maps/de_train_retake.txt CRC:0002fee1a2 size:4826
 maps/de_vertigo_camera_nodes.kv3 CRC:003995c8c5 size:16095
 maps/de_vertigo_retake.txt CRC:0041f38891 size:4630
-maps/editor/zoo/scripts/chess.vjs_c CRC:005d447f9b size:142965
+maps/editor/zoo/scripts/chess.vjs_c CRC:005adbfaa7 size:143685
 maps/editor/zoo/scripts/grenadetraining.vjs_c CRC:0042df3cd1 size:5668
 maps/editor/zoo/scripts/hello.vjs_c CRC:0085031ac4 size:919
+maps/editor/zoo/scripts/input.vjs_c CRC:0077381b08 size:2301
 maps/editor/zoo/scripts/mdlchange.vjs_c CRC:0025d1e734 size:2582
-maps/editor/zoo/scripts/setup.vjs_c CRC:001bf897ce size:1365
+maps/editor/zoo/scripts/setup.vjs_c CRC:000d9de9d7 size:1350
 maps/editor/zoo/scripts/trace.vjs_c CRC:00388091aa size:6616
 maps/workshop_compatibility_versions.txt CRC:0026cd2bf9 size:1428
 materials/anubis/anubis_water_canal.vmat_c CRC:007e7b5225 size:5763
@@ -78645,9 +78646,9 @@ resource/csgo_koreana.txt CRC:0094ae07a7 size:4822017
 resource/csgo_latam.txt CRC:0088605eef size:4901995
 resource/csgo_norwegian.txt CRC:00155c7d7f size:4656283
 resource/csgo_polish.txt CRC:00ea6940aa size:5042271
-resource/csgo_portuguese.txt CRC:0070428009 size:4797723
+resource/csgo_portuguese.txt CRC:0006399b4f size:4797727
 resource/csgo_romanian.txt CRC:0011ba6df7 size:4991821
-resource/csgo_russian.txt CRC:0043a2d0a3 size:6235328
+resource/csgo_russian.txt CRC:009cc7b664 size:6234936
 resource/csgo_schinese.txt CRC:00d0741e1a size:4648471
 resource/csgo_schinese_pw.txt CRC:0083fe268a size:15645
 resource/csgo_spanish.txt CRC:00bc293312 size:4864560
@@ -78808,7 +78809,7 @@ scripts/talker/swat_fem.vrr_c CRC:00c4cdd7b0 size:22650
 scripts/tools/anim_preview_archetypes.vdata_c CRC:00d242f917 size:6878
 scripts/tools/game_asset_tags.vdata_c CRC:00559be7bf size:2755
 scripts/weapons.vdata_c CRC:009e00c0ab size:32148
-scripts/workshop_cvar_whitelist.txt CRC:007ee7ec6e size:17545
+scripts/workshop_cvar_whitelist.txt CRC:00f5d54e5d size:17584
 smartprops/bicycle/bicycle_rack.vsmart_c CRC:0097f4a6c4 size:1423
 smartprops/bicycle/bicycle_single.vsmart_c CRC:001f5c91ad size:1628
 smartprops/debris/debris_ceiling_tiles_01.vsmart_c CRC:00c0a90e2e size:2600
